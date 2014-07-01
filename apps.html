@@ -1,0 +1,35 @@
+<meta charset="utf8"></meta>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-css.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/angular.js.js"></script>
+    <script type="text/javascript" src="js/bootstrp.js"></script>
+<script type="text/javascript" src="js/apps.js"></script>
+
+<body ng-app="apps">
+
+<div ng-controller="MyCtrl">
+<ul class="nav nav-pills">
+  <li class="active"><a href="index.html">كىتابلار</a></li>
+  <li><a href="apps.html">ئەپلەر</a></li>
+
+</ul>
+
+  
+
+   
+   
+         
+     <div class="jumbotron" ng-repeat="i in items">
+  <h2>{{i.bookid}}</h2>
+  <p> {{i.title}}</p>
+  <p><a class="btn btn-primary " role="button">چۈشۈرۈش</a></p>
+
+
+
+  
+</div>
+
+</body>
